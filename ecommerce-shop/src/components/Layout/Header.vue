@@ -88,7 +88,6 @@ export default {
     line-height: 150%;
     text-decoration: none;
     text-align: center;
-
     &:hover {
       text-decoration: underline;
     }
@@ -104,7 +103,7 @@ export default {
       color: #726E8D;
       text-decoration: none;
       font-size: 16px;
-      &-hover {
+      &:hover {
         text-decoration: underline; 
       }
     }
