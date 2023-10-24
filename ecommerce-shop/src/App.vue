@@ -3,6 +3,7 @@
     <Header />
     <Hero />
     <AboutBrand />
+    <Products />
   </div>
 </template>
 
@@ -10,11 +11,18 @@
 import AboutBrand from './components/Layout/AboutBrand.vue';
 import Header from './components/Layout/Header.vue';
 import Hero from './components/Layout/Hero.vue';
+import Products from './components/Product4Columns.vue';
+import {ref} from 'vue'
 
 export default {
+  data() {
+    return {
+    }
+  },
   components: {
     Header, Hero,
-    AboutBrand
+    AboutBrand,
+    Products
   },
 }
 </script>
@@ -43,4 +51,5 @@ img {
 .container {
   max-width: 1440px;
   margin: auto;
-}</style>
+}
+</style>

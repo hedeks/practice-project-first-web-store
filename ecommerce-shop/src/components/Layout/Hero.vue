@@ -5,13 +5,15 @@
                 <h2 class="hero-info__title">Luxury homeware for people who love timeless design quality</h2>
                 <span class="hero-info__description">Shop the new Spring 2022 collection today</span>
             </div>
-            <div class="hero-info-link"><a href="#" class="hero-info-link__a">View collection</a></div>
+            <ViewCollectionLink />
         </div>
     </div>
 </template>
 <script>
-export default {
+import ViewCollectionLink from '../UI/ViewCollectionLink.vue';
 
+export default {
+    components: { ViewCollectionLink }
 }
 </script>
 <style lang="scss" scoped>
@@ -36,21 +38,6 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        &-link {
-            padding: 16px 32px;
-            background-color: #F9F9F9;
-            width: fit-content;
-            &__a {
-                color: #2A254B;
-                text-decoration: none;
-                width: auto;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
 
         &__title {
             font-weight: 400;

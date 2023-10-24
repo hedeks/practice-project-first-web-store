@@ -71,8 +71,7 @@ export default {
         }
 
         &__title {
-            margin-top: 12px;
-            margin-bottom: 12px;
+            margin: 12px 0 12px 0;
             font-size: 20px;
             line-height: 140%;
             color: #2A254B;
