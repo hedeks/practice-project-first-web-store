@@ -5,7 +5,9 @@
         :title="product.title"
         :price="product.price" />
     </div>
-    <ViewCollectionLink style="margin-top: 48px;"/>
+    <ViewCollectionLink style="margin: auto; margin-top: 64px;"
+    :backcolor="'lightgray'"
+    />
 </template>
 <script>
 import Product from './Product.vue';

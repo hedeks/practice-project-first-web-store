@@ -1,19 +1,15 @@
 <template>
     <div class="hero">
         <div class="hero-info">
-            <div class="hero-info-text">
-                <h2 class="hero-info__title">Luxury homeware for people who love timeless design quality</h2>
-                <span class="hero-info__description">Shop the new Spring 2022 collection today</span>
-            </div>
-            <ViewCollectionLink />
+            <HeroInformation :title="'Luxury homeware for people who love timeless design quality'" :description="'Shop the new Spring 2022 collection today'" :mt="157" :backcolor="'lightgray'"/>
         </div>
     </div>
 </template>
 <script>
-import ViewCollectionLink from '../UI/ViewCollectionLink.vue';
+import HeroInformation from '../HeroInformation.vue';
 
 export default {
-    components: { ViewCollectionLink }
+    components: {  HeroInformation }
 }
 </script>
 <style lang="scss" scoped>

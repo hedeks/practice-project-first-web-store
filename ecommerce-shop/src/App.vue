@@ -4,15 +4,16 @@
     <Hero />
     <AboutBrand />
     <Products />
+    <Ideas />
   </div>
 </template>
 
 <script>
+import Ideas from './components/Ideas.vue';
 import AboutBrand from './components/Layout/AboutBrand.vue';
 import Header from './components/Layout/Header.vue';
 import Hero from './components/Layout/Hero.vue';
 import Products from './components/Product4Columns.vue';
-import {ref} from 'vue'
 
 export default {
   data() {
@@ -22,8 +23,9 @@ export default {
   components: {
     Header, Hero,
     AboutBrand,
-    Products
-  },
+    Products,
+    Ideas
+},
 }
 </script>
 
