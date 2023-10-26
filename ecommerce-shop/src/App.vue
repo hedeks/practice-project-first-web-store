@@ -5,6 +5,7 @@
     <AboutBrand />
     <Products />
     <Ideas />
+    <SignUp />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import AboutBrand from './components/Layout/AboutBrand.vue';
 import Header from './components/Layout/Header.vue';
 import Hero from './components/Layout/Hero.vue';
 import Products from './components/Product4Columns.vue';
+import SignUp from './components/SignUp.vue';
 
 export default {
   data() {
@@ -24,7 +26,8 @@ export default {
     Header, Hero,
     AboutBrand,
     Products,
-    Ideas
+    Ideas,
+    SignUp
 },
 }
 </script>

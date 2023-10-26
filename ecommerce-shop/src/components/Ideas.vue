@@ -21,7 +21,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .ideas {
-    margin-top: 100px;
+    padding: 60px 0;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     &-info {
