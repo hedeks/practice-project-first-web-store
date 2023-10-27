@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <MyInput />
+            <MyInput :color="'white'"/>
         </div>
     </div>
 </template>

@@ -6,12 +6,14 @@
     <Products />
     <Ideas />
     <SignUp />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Ideas from './components/Ideas.vue';
 import AboutBrand from './components/Layout/AboutBrand.vue';
+import Footer from './components/Layout/Footer.vue';
 import Header from './components/Layout/Header.vue';
 import Hero from './components/Layout/Hero.vue';
 import Products from './components/Product4Columns.vue';
@@ -27,7 +29,8 @@ export default {
     AboutBrand,
     Products,
     Ideas,
-    SignUp
+    SignUp,
+    Footer
 },
 }
 </script>
