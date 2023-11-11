@@ -6,32 +6,31 @@
                     <span class="footer-upper-left-menu-title">Menu
                     </span>
                     <div class="footer-upper-left-menu-links">
-                        <a href="#" class="footer-upper-left-menu-links__a">New arrivals</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Best sellers</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Recently viewed</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Popular this week</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">All products</a>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">New arrivals</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Best sellers</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Recently viewed</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Popular this week</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">All products</router-link>
                     </div>
                 </div>
                 <div class="footer-upper-left-categories">
                     <span class="footer-upper-left-menu-title">Categories</span>
                     <div class="footer-upper-left-menu-links">
-                        <a href="#" class="footer-upper-left-menu-links__a">Crockery</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Furniture</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Homeware</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Plant pots</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Chairs</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Crockery</a>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Crockery</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Furniture</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Homeware</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Plant pots</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Chairs</router-link>
+                        <router-link to="/products" class="footer-upper-left-menu-links__a">Crockery</router-link>
                     </div>
                 </div>
                 <div class="footer-upper-left-ourcompany">
                     <span class="footer-upper-left-menu-title">Our company</span>
                     <div class="footer-upper-left-menu-links">
-                        <a href="#" class="footer-upper-left-menu-links__a">About us</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Vacancies</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Contact us</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Privacy</a>
-                        <a href="#" class="footer-upper-left-menu-links__a">Returns policy</a>
+                        <router-link to="/about" class="footer-upper-left-menu-links__a">About us</router-link>
+                        <router-link to="/contact" class="footer-upper-left-menu-links__a">Contact us</router-link>
+                        <router-link to="/privacy" class="footer-upper-left-menu-links__a">Privacy</router-link>
+                        <router-link to="/policy" class="footer-upper-left-menu-links__a">Returns policy</router-link>
                     </div>
                 </div>
             </div>
@@ -64,7 +63,7 @@
     </div>
 </template>
 <script>
-import MyInput from '../UI/MyInput.vue';
+import MyInput from '@/components/UI/MyInput.vue';
 
 export default {
     components: { MyInput }
@@ -117,7 +116,7 @@ export default {
                         line-height: normal;
 
                         &:hover {
-                            text-decoration: underline;
+                            color: lightgray;
                         }
                     }
                 }

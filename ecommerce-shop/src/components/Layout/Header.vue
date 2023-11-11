@@ -4,7 +4,7 @@
       <div class="header-top-search">
         <img src="/svg/Search.svg" />
       </div>
-      <a href="#" class="header-logo">Avion</a>
+      <router-link to="/" class="header-logo">Avion</router-link>
       <div class="header-top-right">
         <div class="header-top-right__cart">
           <a href="#">
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="header-menu">
-      <a :href="el.path" v-for="(el, i) in menu" :key="i" class="header-menu__link"> {{ el.name }}</a>
+      <router-link class="header-menu__link" v-for="(el, i) in menu" :key="i" :to="el.path"> {{ el.name }}</router-link>
     </div>
   </header>
 </template>
@@ -30,27 +30,27 @@ export default {
       menu: [
         {
           name: "Plant pots",
-          path: "/plant"
+          path: "/products"
         },
         {
           name: "Ceramics",
-          path: "/ceramics"
+          path: "/products"
         },
         {
           name: "Tables",
-          path: "/tables"
+          path: "/products"
         },
         {
           name: "Chairs",
-          path: "/chairs"
+          path: "/products"
         },
         {
           name: "Tableware",
-          path: "/tableware"
+          path: "/products"
         },
         {
           name: "Cutlery",
-          path: "/cutlery"
+          path: "/products"
         }
       ]
     };
@@ -89,7 +89,7 @@ export default {
     text-decoration: none;
     text-align: center;
     &:hover {
-      text-decoration: underline;
+      color: lightgray;
     }
   }
 
@@ -104,7 +104,7 @@ export default {
       text-decoration: none;
       font-size: 16px;
       &:hover {
-        text-decoration: underline; 
+        color: lightgray;
       }
     }
   }

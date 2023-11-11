@@ -1,38 +1,15 @@
 <template>
   <div class="container">
     <Header />
-    <Hero />
-    <AboutBrand />
-    <Products />
-    <Ideas />
-    <SignUp />
+    <router-view></router-view>
     <Footer />
   </div>
 </template>
 
-<script>
-import Ideas from './components/Ideas.vue';
-import AboutBrand from './components/Layout/AboutBrand.vue';
-import Footer from './components/Layout/Footer.vue';
-import Header from './components/Layout/Header.vue';
-import Hero from './components/Layout/Hero.vue';
-import Products from './components/Product4Columns.vue';
-import SignUp from './components/SignUp.vue';
+<script setup>
+import Header from '@/components/Layout/Header.vue';
+import Footer from "@/components/Layout/Footer.vue"
 
-export default {
-  data() {
-    return {
-    }
-  },
-  components: {
-    Header, Hero,
-    AboutBrand,
-    Products,
-    Ideas,
-    SignUp,
-    Footer
-},
-}
 </script>
 
 <style lang="scss">

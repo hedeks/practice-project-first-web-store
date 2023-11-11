@@ -1,8 +1,8 @@
 <template>
     <div class="hero-info-link">
-        <a href="#" class="hero-info-link__a"
+        <router-link to="/products" class="hero-info-link__a"
             :class="[{ lightgray: backcolor === 'lightgray' }, { darkgray: backcolor === 'darkgray' }]">View
-            collection</a>
+            collection </router-link> 
     </div>
 </template>
 <script>
@@ -24,7 +24,7 @@ export default {
         width: auto;
 
         &:hover {
-            text-decoration: underline;
+            color: lightgray;
         }
     }
 }
